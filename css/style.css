@@ -1,45 +1,27 @@
-/* Temel sıfırlama */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Zarif font ve genel yapı */
 body {
   background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  font-family: 'Georgia', 'Times New Roman', serif;
-  color: #333;
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #333;
   line-height: 1.6;
   min-height: 100vh;
   padding-bottom: 60px;
 }
 
-/* Ana kapsayıcı kutu */
-.container {
-  max-width: 960px;
-  margin: 40px auto;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.05);
-}
 
-/* Başlıklar */
 h1, h2, h3 {
   font-family: 'Georgia', serif;
   margin-bottom: 20px;
   color: #222;
 }
 
-/* Paragraflar */
-p {
-  margin-bottom: 16px;
-}
-
-/* Linkler */
 a {
   color: #444;
   text-decoration: underline dotted;
@@ -49,7 +31,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Form alanları */
 form input,
 form textarea,
 form select {
@@ -61,7 +42,6 @@ form select {
   font-family: inherit;
 }
 
-/* Düğmeler */
 button,
 input[type="submit"] {
   background-color: #222;
@@ -79,16 +59,19 @@ input[type="submit"]:hover {
   background-color: #555;
 }
 
-/* Kartlar */
-.card {
-  background: white;
-  padding: 20px;
+.slider-img {
+  height: 350px;
+  object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.08);
-  margin-bottom: 20px;
+  max-width: 100%;
+  margin: auto;
 }
 
-/* Footer */
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
 footer {
   background-color: #222;
   color: #fff;
@@ -97,7 +80,29 @@ footer {
   font-size: 14px;
 }
 
-/* Responsive */
+.hero-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
 @media (max-width: 768px) {
   .container {
     margin: 20px;

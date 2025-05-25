@@ -24,8 +24,7 @@
 
 
    <!-- Navbar Başlangıcı -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(255, 255, 255, 0.85); box-shadow: 0 2px 6px rgba(0,0,0,0.1);">  <div class="container-fluid">
     <a class="navbar-brand" href="index.html">WebProje</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,33 +62,54 @@
 </nav>
 <!-- Navbar Sonu -->
 
-<header class="bg-primary text-white text-center py-5">
-  <div class="container my-5">
-    <h1 class="display-4">Hoş Geldiniz!</h1>
-    <p class="lead">Bu site benim ve memleketimin tanıtımı için hazırlandı.</p>
+<!-- Hero Box Başlangıcı -->
+<header class="py-5">
+  <div class="container">
+    <div class="hero-box text-center">
+      <h1>Merhaba, ben Murat</h1>
+      <p>Kişisel web siteme hoş geldiniz. Hakkımda daha fazla bilgi edinmek için gezinmeye devam edin!</p>
+    </div>
   </div>
 </header>
+<!-- Hero Box Sonu -->
 
-
-
-
-    
-
-   
-
-    
+<!-- Kartlar Bölümü -->
 <section class="container my-5">
-  <div class="row">
+  <div class="row g-4">
+
+    <!-- Kart 1 -->
     <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
+      <div class="card h-100">
+        <div class="card-body text-center">
           <h5 class="card-title">Ben Kimim?</h5>
-          <p class="card-text">Kendimi ve bu projeyi tanıtan kısa bir metin buraya gelir.</p>
-          <a href="hakkinda.html" class="btn btn-primary">Devamını Oku</a>
+          <p class="card-text">Ben Murat Haktan Balım. Sakarya Üniversitesi öğrencisiyim.</p>
+          <a href="hakkinda.html" class="btn btn-outline-dark">Devamını Oku</a>
         </div>
       </div>
     </div>
-    <!-- Diğer 2 kart daha buraya eklenebilir -->
+
+    <!-- Kart 2 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Memleketim</h5>
+          <p class="card-text">Osmaneli hakkında bilgiler ve gezilecek yerleri öğren.</p>
+          <a href="sehir.html" class="btn btn-outline-dark">Göz At</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kart 3 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Takımım</h5>
+          <p class="card-text">Beşiktaş hakkında bilgiler için ilgili sayfaya git.</p>
+          <a href="takimimiz.html" class="btn btn-outline-dark">İncele</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
